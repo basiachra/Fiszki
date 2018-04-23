@@ -79,11 +79,11 @@ public class Menu {
                 }
                 owner.close();
             }
-        });
+        });*/
 
         Button instrBttn = new Button("INSTRUCTIONS");
         instrBttn.setId("insrtuction");
-        instrBttn.setOnAction(new EventHandler<ActionEvent>() {
+        /*instrBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
                 Instruction instr = new Instruction();
                 try {
@@ -93,11 +93,11 @@ public class Menu {
                 }
                 owner.close();
             }
-        });
+        });*/
 
         Button highBttn = new Button("HIGHSCORE");
         highBttn.setId("score");
-        highBttn.setOnAction(new EventHandler<ActionEvent>() {
+        /*highBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
                 Highscore highscore = new Highscore();
                 try {
@@ -108,7 +108,7 @@ public class Menu {
 
                 owner.close();
             }
-        });
+        });*/
 
         Button endGame = new Button("QUIT");
         endGame.setId("end");
@@ -117,9 +117,9 @@ public class Menu {
                 owner.close();
             }
         });
-*/
 
-       // root.getChildren().addAll(startBttn, instrBttn, highBttn, endGame);
+
+        root.getChildren().addAll(startBttn, instrBttn, highBttn, endGame);
         root.setAlignment(Pos.CENTER);
     }
 
